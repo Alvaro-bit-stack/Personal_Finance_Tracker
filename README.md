@@ -31,6 +31,10 @@ Personal Finance/
 3. Explore and run analysis scripts in `src/` or notebooks in `notebooks/`.
 
 ##Visual of Dashboard
+![Image](https://github.com/user-attachments/assets/72c1c58f-44c4-46b2-a2ac-4e71b3ce5df7)
+
+![Image](https://github.com/user-attachments/assets/50fd1862-dddd-4cd7-9a1b-bf47af09e588)
+
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
