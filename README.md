@@ -27,9 +27,10 @@ Personal Finance/
    ```sh
    git clone https://github.com/yourusername/personal-finance.git
    ```
-2. Add your transaction CSVs to the `data/` folder (do not commit sensitive data).
+2. Add your transaction CSVs to the `data/` folder.
 3. Explore and run analysis scripts in `src/` or notebooks in `notebooks/`.
 
+##Visual of Dashboard
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
