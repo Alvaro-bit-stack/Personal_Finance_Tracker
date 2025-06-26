@@ -25,7 +25,7 @@ Personal Finance/
 ## Getting Started
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/personal-finance.git
+   git clone https://github.com/alvaro-bit-stack/personal-finance.git
    ```
 2. Add your transaction CSVs to the `data/` folder.
 3. Explore and run analysis scripts in `src/` or notebooks in `notebooks/`.
