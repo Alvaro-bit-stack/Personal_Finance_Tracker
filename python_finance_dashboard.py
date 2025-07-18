@@ -34,18 +34,18 @@ expenses = float(df_kpi['total_monthly_expenses'][0])
 net_savings = income - expenses
 
 # --- KPI Display ---
-st.title("💼 Personal Finance Dashboard")
+st.title(" Personal Finance Dashboard")
 st.markdown("## 🔢 Monthly Summary")
 
 col1, col2, col3 = st.columns(3)
-col1.metric("💰 Total Income", f"${income:,.2f}")
-col2.metric("💸 Total Expenses", f"${expenses:,.2f}")
-col3.metric("📈 Net Savings", f"${net_savings:,.2f}")
+col1.metric(" Total Income", f"${income:,.2f}")
+col2.metric(" Total Expenses", f"${expenses:,.2f}")
+col3.metric(" Net Savings", f"${net_savings:,.2f}")
 
 st.markdown("---")
 
 # --- Income vs Expenses Chart ---
-st.subheader("📊 Income vs Expenses")
+st.subheader(" Income vs Expenses")
 fig = px.bar(df_kpi, x=["total_monthly_income", "total_monthly_expenses"],
              labels={"value": "Amount", "variable": "Type"},
              title="Monthly Income vs Expenses", barmode="group")
@@ -67,7 +67,7 @@ df_expenses_by_category = pd.read_sql("""
          FROM transactions WHERE category_id = 6 AND "type" = 'expense');
 """, conn)
 
-st.markdown("## 🧾 Expenses by Category")
+st.markdown("##  Expenses by Category")
 fig_expense = px.bar(df_expenses_by_category,
     x=["Groceries", "Subscriptions", "Miscellaneous", "Transportation", "Shopping/Going out"],
     labels={"value": "Amount", "variable": "Category"},
@@ -90,7 +90,7 @@ df_most_expensive = pd.read_sql("""
     JOIN categories c USING(category_id);
 """, conn)
 
-st.markdown("## 🏆 Most Expensive Category")
+st.markdown("## Most Expensive Category")
 st.write(df_most_expensive)
 
 # --- Average Daily Expenses ---
@@ -106,7 +106,7 @@ df_avg_daily = pd.read_sql("""
     ORDER BY day;
 """, conn)
 
-st.markdown("## 📅 Daily Spending Trends")
+st.markdown("##  Daily Spending Trends")
 fig_daily_expenses = px.scatter(df_avg_daily, 
     x='day', 
     y='average_daily_expense',
